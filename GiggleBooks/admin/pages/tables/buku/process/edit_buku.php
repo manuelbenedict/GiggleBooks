@@ -31,7 +31,7 @@
     {
         // jika gambar diubah
         $query_gambar = "SELECT gambar FROM buku WHERE id_buku=$id_buku";
-        $result       = mysqli_query($connect, $query_gambar);
+        $result       = mysqli_query($con, $query_gambar);
         $hasil        = mysqli_fetch_assoc($result);
         $gambar       = $hasil['gambar'];
 
